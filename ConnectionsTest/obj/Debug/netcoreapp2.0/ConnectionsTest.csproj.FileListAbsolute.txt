@@ -1,0 +1,11 @@
+C:\Users\Devin Brown\source\repos\ConnectionsTest\ConnectionsTest\bin\Debug\netcoreapp2.0\ConnectionsTest.deps.json
+C:\Users\Devin Brown\source\repos\ConnectionsTest\ConnectionsTest\bin\Debug\netcoreapp2.0\ConnectionsTest.runtimeconfig.json
+C:\Users\Devin Brown\source\repos\ConnectionsTest\ConnectionsTest\bin\Debug\netcoreapp2.0\ConnectionsTest.runtimeconfig.dev.json
+C:\Users\Devin Brown\source\repos\ConnectionsTest\ConnectionsTest\bin\Debug\netcoreapp2.0\ConnectionsTest.dll
+C:\Users\Devin Brown\source\repos\ConnectionsTest\ConnectionsTest\bin\Debug\netcoreapp2.0\ConnectionsTest.pdb
+C:\Users\Devin Brown\source\repos\ConnectionsTest\ConnectionsTest\obj\Debug\netcoreapp2.0\ConnectionsTest.csprojAssemblyReference.cache
+C:\Users\Devin Brown\source\repos\ConnectionsTest\ConnectionsTest\obj\Debug\netcoreapp2.0\ConnectionsTest.csproj.CoreCompileInputs.cache
+C:\Users\Devin Brown\source\repos\ConnectionsTest\ConnectionsTest\obj\Debug\netcoreapp2.0\ConnectionsTest.AssemblyInfoInputs.cache
+C:\Users\Devin Brown\source\repos\ConnectionsTest\ConnectionsTest\obj\Debug\netcoreapp2.0\ConnectionsTest.AssemblyInfo.cs
+C:\Users\Devin Brown\source\repos\ConnectionsTest\ConnectionsTest\obj\Debug\netcoreapp2.0\ConnectionsTest.dll
+C:\Users\Devin Brown\source\repos\ConnectionsTest\ConnectionsTest\obj\Debug\netcoreapp2.0\ConnectionsTest.pdb

@@ -1,0 +1,62 @@
+﻿@page
+@model IndexModel
+@{
+}
+<h2>My Connections</h2>
+
+<a asp-page="Create">Add New Connection</a>
+<div>
+    @if (Model.Connections.Count() > 0)
+    {
+        <form method="post">
+            <div>
+                <table>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(m => m.Connections.FirstOrDefault().GamerGamer)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(m => m.Connections.FirstOrDefault().GamerGamer)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(m => m.Connections.FirstOrDefault().GamerGamer)
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <th>
+           
+        </th>
+        <tr>
+
+        </tr>
+        @foreach (var item in Model.Connections)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(m => item.GamerGamer)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.GameGame)
+                </td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@item.ID">Edit</a>
+                    <button asp-page-handler="Delete" asp-route-id="@item.ID">&times;</button>
+                </td>
+            </tr>
+        }
+        
+}
+else
+{
+    <p>No Go Bro</p>
+
+}

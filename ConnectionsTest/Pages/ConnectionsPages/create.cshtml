@@ -1,0 +1,20 @@
+﻿@page
+@model createModel
+@{
+}
+<div>
+    <h2>Add Connection Items</h2>
+</div>
+
+<div>
+    <form method="post">
+        <input asp-for="Connections.GameGame" type="text" placeholder="GamGame" />
+        <span asp-validation-for="Connections.ConnectionName"></span>
+
+        <input asp-for="Connections.GamerGamer" type="text" placeholder="GamerGamer " />
+        <span asp-validation-for="Connections.GamerGamer"></span>
+
+        <input type="submit" value="Add Connection" />
+        <a asp-page="Index">Back to Connections List</a>
+    </form>
+</div>
