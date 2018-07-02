@@ -11,7 +11,7 @@ namespace ConnectionsTest.Model
     {
         public AppplicationDbContext(DbContextOptions<AppplicationDbContext> options) : base(options)
         {
-
+           
         }
 
         public DbSet<Connection>ConnectionsItems { get; set; }

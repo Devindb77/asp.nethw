@@ -4,26 +4,34 @@
 }
 <h2>My Connections</h2>
 
-<a asp-page="Create">Add New Connection</a>
 <div>
-    @if (Model.Connections.Count() > 0)
+    <a asp-page="Create">Add new Connection</a>
+    @if (Model.afterAddMessage != null)
+    {
+        <div>
+            @Model.afterAddMessage
+        </div>
+    }
+</div>
+<div>
+    @if (Model.Connect.Count() > 0)
     {
         <form method="post">
             <div>
                 <table>
                     <tr>
                         <th>
-                            @Html.DisplayNameFor(m => m.Connections.FirstOrDefault().GamerGamer)
+                            @Html.DisplayNameFor(m => m.Connect.FirstOrDefault().GameGame)
                         </th>
                     </tr>
                     <tr>
                         <th>
-                            @Html.DisplayNameFor(m => m.Connections.FirstOrDefault().GamerGamer)
+                            @Html.DisplayNameFor(m => m.Connect.FirstOrDefault().Connect)
                         </th>
                     </tr>
                     <tr>
                         <th>
-                            @Html.DisplayNameFor(m => m.Connections.FirstOrDefault().GamerGamer)
+                            @Html.DisplayNameFor(m => m.Connect.FirstOrDefault().pointme)
                         </th>
                     </tr>
                 </table>
@@ -35,23 +43,28 @@
         <tr>
 
         </tr>
-        @foreach (var item in Model.Connections)
+        @foreach (var item in Model.Connect)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(m => item.GamerGamer)
-                </td>
-                <td>
-                    @Html.DisplayFor(m => item.ID)
-                </td>
-                <td>
-                    @Html.DisplayFor(m => item.GameGame)
-                </td>
-                <td>
-                    <a asp-page="Edit" asp-route-id="@item.ID">Edit</a>
-                    <button asp-page-handler="Delete" asp-route-id="@item.ID">&times;</button>
-                </td>
-            </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(m => item.Connect)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.GameGame)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.pointme)
+            </td>
+            <td>
+                <a asp-page="Edit" asp-route-id="@item.ID">Edit</a>
+                <button asp-page-handler="Delete" asp-route-id="@item.ID">&times;</button>
+            </td>
+
+        </tr>
+            
         }
         
 }
@@ -60,3 +73,4 @@ else
     <p>No Go Bro</p>
 
 }
+    </div>

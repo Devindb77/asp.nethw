@@ -7,7 +7,7 @@ using ConnectionsTest.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+
 
 namespace ConnectionsTest.Pages.ConnectionsPages
 {
@@ -27,7 +27,7 @@ namespace ConnectionsTest.Pages.ConnectionsPages
 
         public IEnumerable<Connection> Connect { get; set; }
         public Connection Connections { get; set; }
-        public new async Task OnGet()
+        public new async Task OnGet() 
         {
             Connect = await _db.ConnectionsItems.ToListAsync();
         }

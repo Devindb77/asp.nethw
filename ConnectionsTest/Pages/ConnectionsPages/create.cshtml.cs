@@ -1,11 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Threading.Tasks;
 using ConnectionsTest.Model;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using static Microsoft.AspNetCore.Hosting.Internal.HostingApplication;
 
 namespace ConnectionsTest.Pages.ConnectionsPages
 {
@@ -22,7 +18,7 @@ namespace ConnectionsTest.Pages.ConnectionsPages
         public string afterAddMessage { get; set; }
         [BindProperty]
 
-        public connections connect { get; set; }
+        public Connection ConnectionsTest{ get; set; }
 
 
         public void OnGet()
@@ -37,11 +33,11 @@ namespace ConnectionsTest.Pages.ConnectionsPages
             }
             else
             {
-                _db.ConnectionsItems.Add(connect);
+                _db.ConnectionsItems.Add(ConnectionsTest);
 
                 await _db.SaveChangesAsync();
 
-                afterAddMessage = "!new connwction made!";
+                afterAddMessage = "!new connection made!";
 
                 return RedirectToPage("index");
             }

@@ -12668,11 +12668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Devin Brown\\source\\repos\\ConnectionsTest\\ConnectionsTest\\ConnectionsTest.csproj",
+      "projectUniqueName": "C:\\Users\\Devin Brown\\Downloads\\ConnectionsTest\\ConnectionsTest.csproj",
       "projectName": "ConnectionsTest",
-      "projectPath": "C:\\Users\\Devin Brown\\source\\repos\\ConnectionsTest\\ConnectionsTest\\ConnectionsTest.csproj",
+      "projectPath": "C:\\Users\\Devin Brown\\Downloads\\ConnectionsTest\\ConnectionsTest.csproj",
       "packagesPath": "C:\\Users\\Devin Brown\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Devin Brown\\source\\repos\\ConnectionsTest\\ConnectionsTest\\obj\\",
+      "outputPath": "C:\\Users\\Devin Brown\\Downloads\\ConnectionsTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
